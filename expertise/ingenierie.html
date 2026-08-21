@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture — KN-Group Consulting</title>
+  <meta name="description" content="KN-Group Consulting conçoit des bâtiments contemporains, performants et durables, intégrés à leur contexte urbain et culturel.">
+
+  <!-- =========================================================
+       FONTS
+  ========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- =========================================================
+       STYLES — FEUILLES GLOBALES
+  ========================================================== -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+
+  <!-- =========================================================
+       STYLES — PAGE ARCHITECTURE UNIQUEMENT
+       (scoppé sous .page-architecture, n'affecte pas les autres pages)
+  ========================================================== -->
+  <link rel="stylesheet" href="../css/architecture-page.css">
+  <link rel="icon" type="image/png" href="../images/KLOGO7.png">
+</head>
+
+<body class="page-architecture">
+
+
+  <!-- =========================================================
+       NAVIGATION PRINCIPALE
+       =========================================================
+       Barre de navigation fixe avec logo, liens desktop et
+       menus déroulants. Le positionnement et le comportement
+       sont gérés par layout.css (non modifié).
+  ========================================================== -->
+  <nav class="site-nav">
+    <a href="../index.html" class="nav-logo" aria-label="KN Group Consulting">
+      <img src="../images/KLOGO7.png" alt="Logo KN Group Consulting">
+      <span class="nav-logo__text">KN-<span>GROUP</span></span>
+    </a>
+
+    <!-- Liens desktop + dropdowns -->
+    <div class="nav-links">
+      <a href="../index.html">Accueil</a>
+
+      <!-- Dropdown : À propos -->
+      <div class="nav-dropdown">
+        <a href="../Apropos.html" aria-haspopup="true" aria-expanded="false">À propos</a>
+        <div class="dropdown-menu" role="menu" aria-label="Sections À propos">
+          <a role="menuitem" href="../Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+          <a role="menuitem" href="../Apropos.html#vision">Notre vision</a>
+          <a role="menuitem" href="../Apropos.html#culture">Notre culture</a>
+          <a role="menuitem" href="../Apropos.html#rejoindre">Nous rejoindre</a>
+          <a class="mega-cta" href="../Apropos.html">Découvrir notre entreprise →</a>
+        </div>
+      </div>
+
+      <!-- Dropdown : Expertise -->
+      <div class="nav-dropdown">
+        <a href="../expertise.html" aria-haspopup="true" aria-expanded="false">Expertise</a>
+        <div class="dropdown-menu" role="menu" aria-label="Domaines d'expertise">
+          <a role="menuitem" href="../expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+          <a role="menuitem" href="../expertise/architecture.html">Architecture</a>
+          <a role="menuitem" href="../expertise/design-interieure.html">Design intérieur</a>
+          <a role="menuitem" href="../expertise/immobilier.html">Immobilier</a>
+          <a role="menuitem" href="../expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+          <a role="menuitem" href="../expertise/energie.html">Énergie</a>
+          <a role="menuitem" href="../expertise/design-durable.html">Design durable</a>
+          <a role="menuitem" href="../expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+          <a class="mega-cta" href="../expertise.html">Découvrir nos expertises →</a>
+        </div>
+      </div>
+
+      <a href="../contact.html">Contact</a>
+    </div>
+
+    <!-- Bouton hamburger (mobile) -->
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <!-- =========================================================
+       MENU MOBILE
+       =========================================================
+       Panneau plein écran avec sous-menus accordéon.
+       Le comportement JS (ouverture/fermeture) est géré
+       par main.js (non modifié).
+  ========================================================== -->
+  <div class="mobile-menu">
+    <a href="../index.html">Accueil</a>
+
+    <!-- Sous-menu : À propos -->
+    <div class="mobile-submenu">
+      <div class="mobile-submenu-header">
+        <a class="mobile-submenu-link" href="../Apropos.html">À propos</a>
+        <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about" aria-label="Afficher les liens À propos">+</button>
+      </div>
+      <div class="mobile-submenu-links" id="mobile-about">
+        <div>
+          <a href="../Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../Apropos.html#vision">Notre vision</a>
+          <a href="../Apropos.html#culture">Notre culture</a>
+          <a href="../Apropos.html#rejoindre">Nous rejoindre</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sous-menu : Expertise -->
+    <div class="mobile-submenu">
+      <div class="mobile-submenu-header">
+        <a class="mobile-submenu-link" href="../expertise.html">Expertise</a>
+        <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-expertise" aria-label="Afficher les liens Expertise">+</button>
+      </div>
+      <div class="mobile-submenu-links" id="mobile-expertise">
+        <div>
+          <a href="../expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+          <a href="../expertise/architecture.html">Architecture</a>
+          <a href="../expertise/design-interieure.html">Design intérieur</a>
+          <a href="../expertise/immobilier.html">Immobilier</a>
+          <a href="../expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+          <a href="../expertise/energie.html">Énergie</a>
+          <a href="../expertise/design-durable.html">Design durable</a>
+          <a href="../expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="../contact.html">Contact</a>
+
+    <!-- Infos de contact dans le menu mobile -->
+    <div class="mobile-meta">
+      <span>Douala, Cameroun</span>
+      <span>contact@kn-group.pro</span>
+    </div>
+  </div>
+
+
+  <!-- =========================================================
+       FOND FIXE — IMAGE ARCHITECTURE
+       =========================================================
+       Image en position:fixed qui reste visible derrière
+       TOUT le contenu de la page (hero → intro → prestations
+       → CTA). Elle est animée en continu avec un zoom et un
+       déplacement subtils.
+
+       L'overlay sombre assure la lisibilité du texte.
+       Le footer, en z-index:10, masque cette image.
+  ========================================================== -->
+  <div class="architecture-fixed-bg" aria-hidden="true">
+    <img class="architecture-fixed-bg__image"
+         src="../images/expertise/ingenierie.png"
+         alt=""
+         loading="eager">
+    <div class="architecture-fixed-bg__overlay"></div>
+  </div>
+
+
+  <!-- =========================================================
+       CONTENU PRINCIPAL — WRAPPER
+       =========================================================
+       Ce wrapper positionne tout le contenu de la page
+       au-dessus du fond fixe (z-index:1).
+       Le footer est hors de ce wrapper et en z-index:10.
+  ========================================================== -->
+  <main class="architecture-page">
+
+
+    <!-- =========================================================
+         HERO — PAGE ARCHITECTURE
+         =========================================================
+         Le hero conserve son positionnement actuel (min-height,
+         padding-top, alignement flex-end). L'image d'origine
+         du hero-media est masquée par CSS car le fond fixe
+         global fournit la même image. Le gradient ::after
+         du hero-media est conservé pour la lisibilité du texte.
+    ========================================================== -->
+    <header class="hero page-hero">
+
+      <!-- Hero media : gradient de lisibilité conservé,
+           image masquée (le fond fixe la remplace) -->
+      
+
+      <!-- Contenu du hero : breadcrumb, titre, description -->
+      <div class="hero-content">
+        <h1 class="hero-title"> Ingénierie structurelle & génie des systèmes techniques</h1>
+        <p class="hero-tagline">
+          Une approche technique et rigoureuse pour concevoir des structures sûres, 
+          performantes et harmonieusement intégrées à chaque projet architectural.
+        </p>
+      </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         SECTION INTRODUCTION
+         =========================================================
+         Présentation du domaine d'expertise Architecture.
+         Grille deux colonnes : coordonnée + titre / texte descriptif.
+         Fond transparent — l'image de fond animée est visible derrière.
+    ========================================================== -->
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-grid">
+
+          <!-- Colonne gauche : coordonnée et titre -->
+          <div class="intro-left reveal">
+            <span class="section-coord">Présentation</span>
+            <h2 class="section-title">Génie des systèmes techniques du bâtiments</h2>
+          </div>
+
+          <!-- Colonne droite : texte descriptif -->
+          <div class="intro-right reveal" style="transition-delay: 0.15s;">
+            <p class="detail-intro">
+              Nous intégrons les systèmes techniques indispensables au confort, à la sécurité, 
+              à la fonctionnalité et à la performance énergétique des bâtiments.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION PRESTATIONS
+         =========================================================
+         Liste des prestations architecturales proposées.
+         Chaque ligne est numérotée et révélée au scroll.
+         Fond transparent — l'image de fond animée est visible derrière.
+         Les bordures de séparation sont très subtiles (rgba 8%).
+    ========================================================== -->
+    <section class="prestations-section">
+      <div class="container">
+
+        <!-- En-tête de la section prestations -->
+        <span class="section-coord">Nos prestations</span>
+        <div class="prestations-header reveal">
+    
+          <h2 class="section-title">Des systèmes techniques pensés pour la performance et le confort</h2>
+        </div>
+
+        <!-- Liste des prestations — chaque ligne est un article -->
+        <div class="prestations-list">
+
+          <!-- Prestation 01 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Chauffage, ventilation et climatisation (CVC)</p>
+            </div>
+          </article>
+
+          <!-- Prestation 02 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Installations électriques et systèmes de puissance</p>
+            </div>
+          </article>
+
+          <!-- Prestation 03 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Éclairage intérieur et extérieur</p>
+            </div>
+          </article>
+
+          <!-- Prestation 04 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Plomberie et réseaux sanitaires</p>
+            </div>
+          </article>
+
+          <!-- Prestation 05 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Gestion et optimisation des réseaux d’eau</p>
+            </div>
+          </article>
+
+          <!-- Prestation 06 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Protection incendie et sécurité des bâtiments</p>
+            </div>
+          </article>
+
+          <!-- Prestation 07 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Systèmes de sécurité et contrôle d’accès</p>
+            </div>
+          </article>
+
+          <!-- Prestation 08 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Automatismes et systèmes de supervision</p>
+            </div>
+          </article>
+
+          <!-- Prestation 09 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Gestion technique centralisée (GTC) et gestion technique du bâtiment (GTB)</p>
+            </div>
+          </article>
+
+          <!-- Prestation 10 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Solutions d’efficacité énergétique</p>
+            </div>
+          </article>
+
+          <!-- Prestation 11 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Optimisation des consommations énergétiques</p>
+            </div>
+          </article>
+
+          <!-- Prestation 11 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Conception de bâtiments intelligents et Smart Buildings</p>
+            </div>
+          </article>
+
+          <!-- Prestation 11 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Solutions de maison intelligente (Smart Home)</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION INTRODUCTION
+         =========================================================
+         Présentation du domaine d'expertise Architecture.
+         Grille deux colonnes : coordonnée + titre / texte descriptif.
+         Fond transparent — l'image de fond animée est visible derrière.
+    ========================================================== -->
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-grid">
+
+          <!-- Colonne gauche : coordonnée et titre -->
+          <div class="intro-left reveal">
+            <span class="section-coord">Présentation</span>
+            <h2 class="section-title">Ingénierie structurelle</h2>
+          </div>
+
+          <!-- Colonne droite : texte descriptif -->
+          <div class="intro-right reveal" style="transition-delay: 0.15s;">
+            <p class="detail-intro">
+              Notre expertise en ingénierie permet de concevoir des solutions <span>sûres, performantes, 
+              économiquement optimisées et adaptées aux contraintes techniques et environnementales</span> 
+              de chaque projet.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION PRESTATIONS
+         =========================================================
+         Liste des prestations architecturales proposées.
+         Chaque ligne est numérotée et révélée au scroll.
+         Fond transparent — l'image de fond animée est visible derrière.
+         Les bordures de séparation sont très subtiles (rgba 8%).
+    ========================================================== -->
+    <section class="prestations-section">
+      <div class="container">
+
+        <!-- En-tête de la section prestations -->
+        <span class="section-coord">Nos prestations</span>
+        <div class="prestations-header reveal">
+    
+          <h2 class="section-title">Des solutions structurelles pensées pour chaque projet</h2>
+        </div>
+
+        <!-- Liste des prestations — chaque ligne est un article -->
+        <div class="prestations-list">
+
+          <!-- Prestation 01 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Conception de structures en béton armé</p>
+            </div>
+          </article>
+
+          <!-- Prestation 02 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Structures métalliques et en acier</p>
+            </div>
+          </article>
+
+          <!-- Prestation 03 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Structures en bois et systèmes constructifs hybrides</p>
+            </div>
+          </article>
+
+          <!-- Prestation 04 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Calcul, dimensionnement et optimisation des structures</p>
+            </div>
+          </article>
+
+          <!-- Prestation 05 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Conception de structures de grande hauteur</p>
+            </div>
+          </article>
+
+          <!-- Prestation 06 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Ouvrages complexes et structures spéciales</p>
+            </div>
+          </article>
+
+          <!-- Prestation 07 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Ouvrages d’art, ponts et infrastructures techniques</p>
+            </div>
+          </article>
+
+          <!-- Prestation 08 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Diagnostic, renforcement et réhabilitation des structures</p>
+            </div>
+          </article>
+
+          <!-- Prestation 09 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Optimisation des matériaux et des systèmes constructifs</p>
+            </div>
+          </article>
+
+          <!-- Prestation 10 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Réduction de l’empreinte carbone des solutions structurelles</p>
+            </div>
+          </article>
+
+          <!-- Prestation 11 -->
+          <article class="prestation-row reveal">
+            <span class="prestation-row__num"></span>
+            <div class="prestation-row__body">
+              <p>Études techniques et assistance à la maîtrise d’œuvre.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION CTA
+         =========================================================
+         Appel à l'action final. Le panneau CTA utilise un effet
+         de transparence vitrée (backdrop-filter: blur) pour se
+         fondre dans l'image de fond tout en restant lisible.
+    ========================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <span class="section-coord">Démarrer un projet</span>
+          <h2 class="section-title">Vous avez un projet ? Construisons ensemble une solution adaptée à vos besoins.</h2>
+          <div class="cta-buttons">
+            <a class="btn" href="../contact.html">
+              <span>Nous contacter</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <a class="btn btn-outline" href="../expertise.html">
+              <span>Toutes nos expertises</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main><!-- /.architecture-page -->
+
+
+  <!-- =========================================================
+       FOOTER — NE PAS MODIFIER
+       =========================================================
+       Le footer reste opaque, au-dessus du fond fixe (z-index:10).
+       Son HTML, CSS et positionnement sont inchangés.
+  ========================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-wrap">
+          <div class="footer-brand-logo">
+            <img src="../images/KLOGO7.png" alt="Logo KN Group Consulting">
+          </div>
+          <div class="footer-brand-text">
+            <div class="footer-brand">KN-<span>GROUP</span> CONSULTING</div>
+            <p class="footer-tagline">Architecture, ingénierie, urbanisme et aménagement du territoire — Douala, Cameroun.</p>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <a href="../index.html">Accueil</a>
+            <a href="../Apropos.html">À propos</a>
+            <a href="../expertise.html">Expertise</a>
+            <a href="../contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h5>À propos</h5>
+            <p>Douala, Cameroun</p>
+            <a href="mailto:contact@kn-group.pro">contact@kn-group.pro</a>
+          </div>
+          <div class="footer-col">
+            <h5>Suivez-nous</h5>
+            <div class="footer-social">
+              <!-- LinkedIn -->
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 5.98V24h-4V14.4c0-2.28-.05-5.2-3.17-5.2-3.2 0-3.69 2.5-3.69 5.07V24h-4V8.5z"/>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M17.5 6.5h.01"/>
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V22C18.34 21.12 22 16.99 22 12z"/>
+                </svg>
+              </a>
+              <!-- X / Twitter -->
+              <a href="#" class="social-link" aria-label="X Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M23 2.999a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0 1.98-2.48 9.14 9.14 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.7 4.12A12.84 12.84 0 0 1 1.64 3.16a4.5 4.5 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.56v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 2.999z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 KN-Group Consulting. Tous droits réservés.</span>
+        <span><a href="mailto:josefernandleuwat@gmail.com"></a></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================
+       BOUTON RETOUR EN HAUT
+  ========================================================== -->
+  <button class="back-to-top" aria-label="Retour en haut">&uarr;</button>
+
+
+  <!-- =========================================================
+       SCRIPTS
+       =========================================================
+       Aucun JavaScript n'a été modifié. Les fichiers existants
+       gèrent : navigation scroll, menu mobile, animations reveal,
+       compteurs et retour en haut.
+  ========================================================== -->
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/counter.js"></script>
+
+</body>
+</html>
