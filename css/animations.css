@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes heroZoomOut {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+
+@keyframes heroSlideImage {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes scrollLine {
+  0% { top: -100%; }
+  50% { top: 0%; }
+  100% { top: 100%; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes revealWidth {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Scroll-reveal utility ----------------------------------------------------
+   Elements start hidden; JS (IntersectionObserver) adds .is-visible
+   when they enter the viewport. */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-slow) var(--ease-editorial), transform var(--dur-slow) var(--ease-editorial);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-med) var(--ease-editorial), transform var(--dur-med) var(--ease-editorial);
+}
+
+.reveal-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.19s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.26s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.33s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .hero-slide__image,
+  .hero-title,
+  .hero-description,
+  .hero-divider {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
