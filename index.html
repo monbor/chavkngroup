@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KN-Group Consulting — Concevoir l'avenir des villes africaines</title>
+<meta name="description" content="KN-Group Consulting, cabinet multidisciplinaire d'architecture, d'ingénierie, d'urbanisme et d'aménagement du territoire, fondé en 2026 à Douala, Cameroun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="icon" type="image/png" href="images/KLOGO7.png">
+</head>
+<body>
+
+<!-- ============================= NAVIGATION ============================= -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="KN Group Consulting">
+    <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+    <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+    <span class="nav-logo__text">KN-<span>GROUP</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <div class="nav-dropdown">
+      <a href="Apropos.html" aria-haspopup="true" aria-expanded="false">À propos</a>
+      <div class="dropdown-menu" role="menu" aria-label="Sections À propos">
+        <a role="menuitem" href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a role="menuitem" href="Apropos.html#vision">Notre vision</a>
+        <a role="menuitem" href="Apropos.html#culture">Notre culture</a>
+        <a role="menuitem" href="Apropos.html#rejoindre">Nous rejoindre</a>
+        <a class="mega-cta" href="Apropos.html">Découvrir notre entreprise →</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="expertise.html" aria-haspopup="true" aria-expanded="false">Expertise</a>
+      <div class="dropdown-menu" role="menu" aria-label="Domaines d'expertise">
+        <a role="menuitem" href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a role="menuitem" href="expertise/architecture.html">Architecture</a>
+        <a role="menuitem" href="expertise/design-interieure.html">Design intérieur</a>
+        <a role="menuitem" href="expertise/immobilier.html">Immobilier</a>
+        <a role="menuitem" href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a role="menuitem" href="expertise/energie.html">Énergie</a>
+        <a role="menuitem" href="expertise/design-durable.html">Design durable</a>
+        <a role="menuitem" href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+        <a class="mega-cta" href="expertise.html">Découvrir nos expertises →</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Accueil</a>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="Apropos.html">À propos</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about" aria-label="Afficher les liens À propos">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-about">
+      <div>
+        <a href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a href="Apropos.html#vision">Notre vision</a>
+        <a href="Apropos.html#culture">Notre culture</a>
+        <a href="Apropos.html#rejoindre">Nous rejoindre</a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="expertise.html">Expertise</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-expertise" aria-label="Afficher les liens Expertise">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-expertise">
+      <div>
+        <a href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a href="expertise/architecture.html">Architecture</a>
+        <a href="expertise/design-interieur.html">Design intérieur</a>
+        <a href="expertise/immobilier.html">Immobilier</a>
+        <a href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a href="expertise/energie.html">Énergie</a>
+        <a href="expertise/design-durable.html">Design durable</a>
+        <a href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+      </div>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-meta">
+    <span>Douala, Cameroun</span>
+    <span>contact@kn-groupconsulting.com</span>
+  </div>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<header class="hero hero-slider" aria-label="Slider de présentation de KN-Group Consulting">
+  <div class="hero-slides" aria-live="polite">
+    <article class="hero-slide is-active" data-slide="0">
+      <!-- VIDÉO À REMPLACER : mettez ici le chemin de votre vidéo locale, ex. videos/hero/urbanisme.mp4 -->
+      <video class="hero-slide__image" autoplay muted loop playsinline poster="">
+        <source src="videos/hero/ammenagement du territoire.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 class="hero-title">Urbanisme &amp; Amenagement DuTerritoire</h1>
+          <!--<p class="hero-description">Nous concevons des espaces urbains durables favorisant la mobilité, la qualité de vie et le développement harmonieux des territoires.</p>
+          <div class="hero-divider" aria-hidden="true"></div>-->
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" data-slide="1">
+      <!-- VIDÉO À REMPLACER : mettez ici le chemin de votre vidéo locale, ex. videos/hero/urbanisme.mp4 -->
+      <video class="hero-slide__image" autoplay muted loop playsinline poster="">
+        <source src="videos/hero/architecture.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 class="hero-title">Architecture</h1>
+          <!--<p class="hero-description">Nous imaginons des bâtiments innovants, fonctionnels et élégants répondant aux exigences esthétiques et techniques les plus élevées.</p>
+          <div class="hero-divider" aria-hidden="true"></div>-->
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" data-slide="2">
+      <!-- VIDÉO À REMPLACER : mettez ici le chemin de votre vidéo locale, ex. videos/hero/urbanisme.mp4 -->
+      <video class="hero-slide__image" autoplay muted loop playsinline poster="">
+        <source src="videos/hero/ingenierie.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 class="hero-title">Ingénierie</h1>
+          <!--<p class="hero-description">Nos solutions d'ingénierie garantissent des infrastructures performantes, durables et adaptées aux défis de demain.</p>
+          <div class="hero-divider" aria-hidden="true"></div>-->
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" data-slide="3">
+     <!-- VIDÉO À REMPLACER : mettez ici le chemin de votre vidéo locale, ex. videos/hero/urbanisme.mp4 -->
+      <video class="hero-slide__image" autoplay muted loop playsinline poster="">
+        <source src="videos/hero/conseil.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 class="hero-title hero-title--split">conseil</h1>
+          <!--<p class="hero-description">Nous planifions et développons des territoires intelligents conciliant croissance économique, environnement et besoins des populations.</p>
+          <div class="hero-divider" aria-hidden="true"></div>-->
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="hero-pagination" aria-label="Navigation du slider">
+    <button class="hero-dot is-active" type="button" aria-label="Afficher la slide 1" aria-current="true"></button>
+    <button class="hero-dot" type="button" aria-label="Afficher la slide 2"></button>
+    <button class="hero-dot" type="button" aria-label="Afficher la slide 3"></button>
+    <button class="hero-dot" type="button" aria-label="Afficher la slide 4"></button>
+  </div>
+</header>
+
+<!-- ============================= PRÉSENTATION ============================= -->
+<section>
+  <div class="container">
+    <div class="section-row">
+      <div class="section-head reveal">
+        <span class="section-coord">— Douala, Cameroun</span>
+        <h2 class="section-title">Une équipe pluridisciplinaire, ancrée dans le contexte africain</h2>
+        <p class="section-lede">
+          KN-Group Consulting est un cabinet multidisciplinaire d'architecture, de design intérieur,
+          d'ingénierie, d'urbanisme et d'aménagement du territoire, fondé en 2026 à Douala.
+          Jeune structure à forte ambition internationale, notre équipe de plus de dix
+          collaborateurs réunit des expertises complémentaires en conception architecturale,
+          ingénierie, planification urbaine et développement territorial — pour accompagner la
+          transformation des villes africaines vers des territoires plus durables, inclusifs et
+          résilients.
+        </p>
+      </div>
+      <div class="section-image reveal">
+        <img src="images/bureau/equipe.jpg" alt="Équipe KN-Group Consulting">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= VALEURS ============================= -->
+<section class="section-alt" id="philo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-coord">Notre philosophie</span>
+      <h2 class="section-title">Six convictions qui guident chaque projet</h2>
+    </div>
+
+    <div class="values-grid reveal-stagger">
+      <a class="value-card-link" href="Apropos.html#fondement01">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/interdisciplinarite.jpeg" alt="Travail d'équipe sur plan architectural">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">01</span><h4>Interdisciplinarité</h4>
+          </div>
+        </div>
+      </a>
+      <a class="value-card-link" href="Apropos.html#fondement02">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/excellent-design.jpg" alt="Dessin architectural premium">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">02</span><h4>Excellence du design</h4>
+          </div>
+        </div>
+      </a>
+      <a class="value-card-link" href="Apropos.html#fondement03">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/innovation.jpg" alt="Projet durable en site urbain">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">03</span><h4>Recherche et innovation</h4>
+          </div>
+        </div>
+      </a>
+      <a class="value-card-link" href="Apropos.html#fondement04">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/equite-inclusion.jpg" alt="Espaces publics inclusifs et accessibles">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">04</span><h4>Équité et inclusion</h4>
+          </div>
+        </div>
+      </a>
+      <a class="value-card-link" href="Apropos.html#fondement05">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/engagement-climatique.jpg" alt="Projet urbain vert et végétation">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">05</span><h4>Engagement climatique</h4>
+          </div>
+        </div>
+      </a>
+      <a class="value-card-link" href="Apropos.html#fondement06">
+        <div class="value-card">
+          <div class="value-card__media">
+            <img loading="lazy" src="images/valeurs/demarche-responsable.png" alt="Approche responsable dans la conception urbaine">
+          </div>
+          <div class="value-card__content">
+            <span class="value-num">06</span><h4>Démarche responsable</h4>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EXPERTISE (aperçu) ============================= -->
+<section class="section-alt expertise-showcase">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-coord">Notre savoir-faire</span>
+      <h2 class="section-title">Une offre multidisciplinaire, pensée pour les territoires d'aujourd'hui</h2>
+      <p class="section-lede">
+        Chaque domaine d'expertise de KN-Group est conçu comme une réponse claire, technique et élégante
+        aux enjeux contemporains de l'architecture, de l'urbanisme et de l'ingénierie.
+      </p>
+    </div>
+
+    <div class="expertise-grid reveal-stagger">
+      <a class="expertise-card expertise-card--tall" href="expertise/urbanisme.html">
+        <img loading="lazy" src="images/expertise/urbanisme.jpg" alt="Ville moderne en planification urbaine">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Urbanisme</span>
+          <h3>Urbanisme et Aménagement du territoire</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--wide" href="expertise/architecture.html">
+        <img loading="lazy" src="images/expertise/architecture.png" alt="Bâtiment contemporain et façade moderne">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Architecture</span>
+          <h3>Architecture</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/immobilier.html">
+        <img loading="lazy" src="images/expertise/immobilier.jpg" alt="Infrastructures et développement territorial">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Foncier &amp; étude programmatique</span>
+          <h3>Immobilier</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/energie.html">
+        <img loading="lazy" src="images/expertise/energie.png" alt="Charpente métallique et structure technique">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Énergie</span>
+          <h3>Énergie</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--tall" href="expertise/ingenierie.html">
+        <img loading="lazy" src="images/expertise/ingenierie.png" alt="Ponts et infrastructures de génie civil">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Ingénierie</span>
+          <h3>Ingénierie structurelle et génie des systèmes techniques</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/design-interieure.html">
+        <img loading="lazy" src="images/expertise/design-interieure.png" alt="Systèmes techniques MEP modernes">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Design d'interieurs</span>
+          <h3>Architecture d'interieurs</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/conseil-assistance-technique.html">
+        <img loading="lazy" src="images/expertise/conseil.jpg" alt="Réunion de projet et accompagnement technique">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Conseil</span>
+          <h3>Conseil stratégique</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--wide" href="expertise/design-durable.html">
+        <img loading="lazy" src="images/expertise/design-durable.png" alt="Bâtiment durable avec énergie renouvelable">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Design durable</span>
+          <h3>Design durable</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= BUREAU (stats) ============================= -->
+<section>
+  <div class="container">
+    <div class="section-stats-layout">
+      <div class="section-head reveal">
+        <span class="section-coord">Le cabinet</span>
+        <h2 class="section-title">Une jeune structure, une ambition internationale</h2>
+        <p class="section-lede">
+          Fondé en 2026 à Douala par Chavany Kemjio, KN-Group Consulting rassemble une équipe
+          pluridisciplinaire au service de la transformation durable des territoires africains.
+        </p>
+      </div>
+
+      <div class="stats-grid reveal-stagger">
+        <div class="stat-item">
+          <span class="stat-num" data-count="10" data-suffix="+">0</span>
+          <span class="stat-label">Collaborateurs</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-label">Domaines d'expertise</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="2026">0</span>
+          <span class="stat-label">Année de fondation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CTA CONTACT ============================= -->
+<!--<section class="section-alt">
+  <div class="container">
+    <div class="quote-block reveal">
+      <p>« Notre singularité réside dans notre capacité à contextualiser chaque problématique pour proposer des réponses uniques et durables. »</p>
+      <cite>— Chavany Kemjio, Fondateur, KN-Group Consulting</cite>
+    </div>
+    <a class="btn" href="contact.html">Discuter d'un projet</a>
+  </div>
+</section>-->
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <div class="footer-brand-logo">
+          <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+          <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+        </div>
+        <div class="footer-brand-text">
+          <div class="footer-brand">KN-<span>GROUP</span> CONSULTING</div>
+          <p class="footer-tagline">Architecture, ingénierie, urbanisme et aménagement du territoire — Douala, Cameroun.</p>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Accueil</a>
+          <a href="Apropos.html">À propos</a>
+          <a href="expertise.html">Expertise</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>À propos</h5>
+          <p>Douala, Cameroun</p>
+          <a href="mailto:contact@kn-groupconsulting.com">contact@kn-groupconsulting.com</a>
+        </div>
+        <div class="footer-col">
+          <h5>Suivez-nous</h5>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 5.98V24h-4V14.4c0-2.28-.05-5.2-3.17-5.2-3.2 0-3.69 2.5-3.69 5.07V24h-4V8.5z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M17.5 6.5h.01"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V22C18.34 21.12 22 16.99 22 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23 2.999a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0 1.98-2.48 9.14 9.14 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.7 4.12A12.84 12.84 0 0 1 1.64 3.16a4.5 4.5 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.56v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 2.999z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KN-Group Consulting. Tous droits réservés.</span>
+      <span><a href="mailto:josefernandleuwat@gmail.com"></a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/counter.js"></script>
+</body>
+</html>

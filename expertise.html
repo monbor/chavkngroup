@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expertises — KN-Group Consulting</title>
+<meta name="description" content="Découvrez les expertises de KN-Group : urbanisme, architecture, aménagement du territoire, ingénierie structurelle, génie civil, MEP, design durable, innovation numérique et conseil technique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="icon" type="image/png" href="images/KLOGO7.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="KN Group Consulting">
+    <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+    <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+    <span class="nav-logo__text">KN-<span>GROUP</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <div class="nav-dropdown">
+      <a href="Apropos.html" aria-haspopup="true" aria-expanded="false">À propos</a>
+      <div class="dropdown-menu" role="menu" aria-label="Sections À propos">
+        <a role="menuitem" href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a role="menuitem" href="Apropos.html#vision">Notre vision</a>
+        <a role="menuitem" href="Apropos.html#culture">Notre culture</a>
+        <a role="menuitem" href="Apropos.html#rejoindre">Nous rejoindre</a>
+        <a class="mega-cta" href="Apropos.html">Découvrir notre entreprise →</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="expertise.html" aria-haspopup="true" aria-expanded="false">Expertise</a>
+      <div class="dropdown-menu" role="menu" aria-label="Domaines d'expertise">
+        <a role="menuitem" href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a role="menuitem" href="expertise/architecture.html">Architecture</a>
+        <a role="menuitem" href="expertise/design-interieure.html">Design intérieur</a>
+        <a role="menuitem" href="expertise/immobilier.html">Immobilier</a>
+        <a role="menuitem" href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a role="menuitem" href="expertise/energie.html">Énergie</a>
+        <a role="menuitem" href="expertise/design-durable.html">Design durable</a>
+        <a role="menuitem" href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+        <a class="mega-cta" href="expertise.html">Découvrir nos expertises →</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Accueil</a>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="Apropos.html">À propos</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about" aria-label="Afficher les liens À propos">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-about">
+      <div>
+        <a href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a href="Apropos.html#vision">Notre vision</a>
+        <a href="Apropos.html#culture">Notre culture</a>
+        <a href="Apropos.html#rejoindre">Nous rejoindre</a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="expertise.html">Expertise</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-expertise" aria-label="Afficher les liens Expertise">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-expertise">
+      <div>
+        <a href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a href="expertise/architecture.html">Architecture</a>
+        <a href="expertise/design-interieure.html">Design intérieur</a>
+        <a href="expertise/immobilier.html">Immobilier</a>
+        <a href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a href="expertise/energie.html">Énergie</a>
+        <a href="expertise/design-durable.html">Design durable</a>
+        <a href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+      </div>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-meta">
+    <span>Douala, Cameroun</span>
+    <span>contact@kn-group.pro</span>
+  </div>
+</div>
+
+<header class="hero page-hero">
+  <div class="hero-media">
+    <img src="images/expertise.png" alt="Architecture et urbanisme contemporains">
+  </div>
+  <div class="hero-content">
+    <div class="detail-breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>/</span>
+      <span>Expertises</span>
+    </div>
+    <h1 class="hero-title">Expertises</h1>
+    <p class="hero-description">Une offre multidisciplinaire pensée pour les territoires, les bâtiments et les projets d'infrastructure les plus ambitieux.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-coord">Expertise</span>
+      <h2 class="section-title">NOS DOMAINES D’EXPERTISE &amp; SERVICES</h2>
+      <p class="section-lede">
+       Grâce à une approche intégrée associant architecture, ingénierie, urbanisme, aménagement du territoire,
+       design, énergie et technologies numériques, KN-Group Consulting accompagne ses clients dans la conception, 
+       la planification et la réalisation de projets à toutes les échelles, du bâtiment individuel aux grands projets urbains 
+       et territoriaux.
+      </p>
+      <p class="section-lede">
+       Notre expertise pluridisciplinaire nous permet de proposer des solutions globales, cohérentes et contextualisées, 
+       conciliant excellence architecturale, performance technique, maîtrise des coûts, innovation, durabilité environnementale et 
+       adaptation aux réalités économiques, sociales et culturelles africaines.
+      </p>
+    </div>
+
+    <div class="expertise-grid reveal-stagger">
+      <a class="expertise-card expertise-card--tall" href="expertise/urbanisme.html">
+        <img loading="lazy" src="images/expertise/urbanisme.jpg" alt="Ville moderne en planification urbaine">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Urbanisme</span>
+          <h3>Urbanisme et Aménagement du territoire</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--wide" href="expertise/architecture.html">
+        <img loading="lazy" src="images/expertise/architecture.png" alt="Bâtiment contemporain et façade moderne">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Architecture</span>
+          <h3>Architecture</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/amenagement-du-territoire.html">
+        <img loading="lazy" src="images/expertise/immobilier.jpg" alt="Infrastructures et développement territorial">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Foncier & étude programmatique</span>
+          <h3>Immobilier</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/energie.html">
+        <img loading="lazy" src="images/expertise/energie.png" alt="Charpente métallique et structure technique">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Énergie</span>
+          <h3>Énergie</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--tall" href="expertise/ingenierie.html">
+        <img loading="lazy" src="images/expertise/ingenierie.png" alt="Ponts et infrastructures de génie civil">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Ingénierie</span>
+          <h3>Ingénierie structurelle & génie des systèmes techniques</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/ingenierie-mep.html">
+        <img loading="lazy" src="images/expertise/design-interieure.png" alt="Systèmes techniques MEP modernes">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Design d'interieurs</span>
+          <h3>Architecture d'interieurs</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card" href="expertise/conseil-assistance-technique.html">
+        <img loading="lazy" src="images/expertise/conseil.jpg" alt="Réunion de projet et accompagnement technique">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Conseil</span>
+          <h3>Conseil stratégique</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+      <a class="expertise-card expertise-card--wide" href="expertise/design-durable.html">
+        <img loading="lazy" src="images/expertise/design-durable.png" alt="Bâtiment durable avec énergie renouvelable">
+        <div class="expertise-card__content">
+          <span class="expertise-card__eyebrow">Design durable</span>
+          <h3>Design durable</h3>
+          <span class="expertise-card__arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="section-head reveal">
+      <h2 class="section-title">Notre approche intégrée</h2>
+      <p class="section-lede">
+       À travers cette combinaison d’expertises, KN-Group Consulting se positionne comme un partenaire capable d’intervenir sur 
+       l’ensemble du cycle de développement d’un projet : diagnostic, stratégie, programmation, conception, ingénierie, 
+       planification, conseil, coordination et accompagnement à la réalisation.
+      </p>
+      <p class="section-lede">
+       Notre approche est particulièrement adaptée aux réalités et aux défis des territoires africains : croissance urbaine rapide, 
+       pression démographique, déficit d’infrastructures, enjeux fonciers, transition énergétique, changement climatique, 
+       mobilité, accès aux services essentiels et amélioration du cadre de vie.
+      </p>
+      <p class="section-lede">
+       Notre ambition est de contribuer à l’émergence de villes et territoires africains plus intelligents, inclusifs, résilients, 
+       compétitifs et durables, en plaçant l’innovation, la qualité de vie et la préservation des ressources au cœur des 
+       stratégies de développement.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <h2 class="section-title">Vous avez un projet ? Construisons ensemble une solution adaptée à vos besoins.</h2>
+      <div>
+        <a class="btn" href="contact.html">Nous contacter</a>
+        <!-- <a class="btn" href="contact.html">Nous contacter</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <div class="footer-brand-logo">
+          <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+          <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+        </div>
+        <div class="footer-brand-text">
+          <div class="footer-brand">KN-<span>GROUP</span> CONSULTING</div>
+          <p class="footer-tagline">Architecture, ingénierie, urbanisme et aménagement du territoire — Douala, Cameroun.</p>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Accueil</a>
+          <a href="Apropos.html">À propos</a>
+          <a href="expertise.html">Expertise</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>À propos</h5>
+          <p>Douala, Cameroun</p>
+          <a href="mailto:contact@kn-group.pro">contact@kn-group.pro</a>
+        </div>
+        <div class="footer-col">
+          <h5>Suivez-nous</h5>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 5.98V24h-4V14.4c0-2.28-.05-5.2-3.17-5.2-3.2 0-3.69 2.5-3.69 5.07V24h-4V8.5z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M17.5 6.5h.01"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V22C18.34 21.12 22 16.99 22 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23 2.999a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0 1.98-2.48 9.14 9.14 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.7 4.12A12.84 12.84 0 0 1 1.64 3.16a4.5 4.5 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.56v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 2.999z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KN-Group Consulting. Tous droits réservés.</span>
+      <span><a href="mailto:josefernandleuwat@gmail.com"></a></span>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" aria-label="Retour en haut">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/counter.js"></script>
+</body>
+</html>

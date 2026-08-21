@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — KN-Group Consulting</title>
+<meta name="description" content="La vision, les valeurs, l'équipe et les partenaires de KN-Group Consulting, cabinet fondé à Douala en 2026 par Chavany Kemjio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="icon" type="image/png" href="images/KLOGO7.png">
+</head>
+<body>
+
+<!-- ============================= NAVIGATION ============================= -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="KN Group Consulting">
+    <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+    <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+    <span class="nav-logo__text">KN-<span>GROUP</span></span>
+  </a>
+   <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <div class="nav-dropdown">
+      <a href="Apropos.html" aria-haspopup="true" aria-expanded="false">À propos</a>
+      <div class="dropdown-menu" role="menu" aria-label="Sections À propos">
+        <a role="menuitem" href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a role="menuitem" href="Apropos.html#vision">Notre vision</a>
+        <a role="menuitem" href="Apropos.html#culture">Notre culture</a>
+        <a role="menuitem" href="Apropos.html#rejoindre">Nous rejoindre</a>
+        <a class="mega-cta" href="Apropos.html">Découvrir notre entreprise →</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <a href="expertise.html" aria-haspopup="true" aria-expanded="false">Expertise</a>
+      <div class="dropdown-menu" role="menu" aria-label="Domaines d'expertise">
+        <a role="menuitem" href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a role="menuitem" href="expertise/architecture.html">Architecture</a>
+        <a role="menuitem" href="expertise/design-interieure.html">Design intérieur</a>
+        <a role="menuitem" href="expertise/immobilier.html">Immobilier</a>
+        <a role="menuitem" href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a role="menuitem" href="expertise/energie.html">Énergie</a>
+        <a role="menuitem" href="expertise/design-durable.html">Design durable</a>
+        <a role="menuitem" href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+        <a class="mega-cta" href="expertise.html">Découvrir nos expertises →</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">Accueil</a>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="Apropos.html">À propos</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-about" aria-label="Afficher les liens À propos">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-about">
+      <div>
+        <a href="Apropos.html#qui-sommes-nous">Qui sommes-nous ?</a>
+        <a href="Apropos.html#vision">Notre vision</a>
+        <a href="Apropos.html#culture">Notre culture</a>
+        <a href="Apropos.html#rejoindre">Nous rejoindre</a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-submenu">
+    <div class="mobile-submenu-header">
+      <a class="mobile-submenu-link" href="expertise.html">Expertise</a>
+      <button class="mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="mobile-expertise" aria-label="Afficher les liens Expertise">+</button>
+    </div>
+    <div class="mobile-submenu-links" id="mobile-expertise">
+      <div>
+        <a href="expertise/urbanisme.html">Urbanisme &amp; aménagement du territoire</a>
+        <a href="expertise/architecture.html">Architecture</a>
+        <a href="expertise/design-interieure.html">Design intérieur</a>
+        <a href="expertise/immobilier.html">Immobilier</a>
+        <a href="expertise/ingenierie.html">Ingénierie structurelle &amp; génie des systèmes techniques</a>
+        <a href="expertise/energie.html">Énergie</a>
+        <a href="expertise/design-durable.html">Design durable</a>
+        <a href="expertise/conseil-assistance-technique.html">Conseil stratégique</a>
+      </div>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-meta">
+    <span>Douala, Cameroun</span>
+    <span>contact@kn-group.pro</span>
+  </div>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<header class="hero page-hero">
+  <div class="hero-media">
+    <!-- IMAGE À REMPLACER : ex. images/bureau/hero-apropos.jpg -->
+    <img src="images/apropos/hero.jpg"
+         alt="Équipe africaine en réunion autour d'un projet architectural">
+  </div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Fondé en 2026</span>
+    <h1 class="hero-title">À propos</h1>
+    <p class="hero-tagline">Une équipe pluridisciplinaire, une même conviction : construire aujourd'hui les villes africaines de demain.</p>
+  </div>
+</header>
+
+<section id="vision">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="section-head reveal">
+          <span class="section-coord">NOTRE VISION</span>
+          <p class="section-lede">
+            Chez KN-Group Consulting, nous considérons l’architecture, l’ingénierie, l’urbanisme et l’aménagement du territoire comme de véritables leviers de transformation économique, sociale, culturelle et environnementale.
+          </p>
+          <p class="section-lede">
+            Notre ambition est de participer à l’émergence d’une nouvelle génération de villes et de territoires africains plus durables, inclusifs, résilients, attractifs et performants, capables de répondre aux besoins actuels tout en anticipant les mutations des prochaines décennies.
+          </p>
+          <p class="section-lede">
+            Nous sommes convaincus que le développement urbain de l’Afrique doit s’appuyer sur des solutions conçues pour ses réalités propres, plutôt que sur la simple reproduction de modèles importés. Notre démarche associe ainsi compréhension du contexte local, excellence de conception, innovation technologique et responsabilité environnementale.
+          </p>
+          <p class="section-lede">
+            Nous explorons notamment les possibilités offertes par les bâtiments à haute performance énergétique, les bâtiments à énergie positive, les matériaux biosourcés et durables, la construction en bois massif, les solutions de conception bioclimatique, les quartiers sobres en carbone et les stratégies de résilience face aux changements climatiques.
+          </p>
+          <p class="section-lede">
+            Mais notre vision ne se limite pas à la performance technique d’un bâtiment. Nous voulons concevoir des projets capables de transformer positivement leur environnement, d’améliorer la qualité de vie, de valoriser les ressources locales, de renforcer les dynamiques économiques et sociales et de contribuer à la création de territoires plus équilibrés.
+          </p>
+          <p class="section-lede">
+            <p><span class="strong">Imaginer. Concevoir. Transformer.</span> 
+          </p>
+          <p class="section-lede">
+             C’est notre ambition : mettre la conception, l’innovation et l’ingénierie au service d’un développement territorial plus durable et d’un avenir urbain ambitieux pour l’Afrique.
+          </p> 
+        </div>
+
+        <div class="quote-block reveal">
+          <p>« Construire aujourd’hui les territoires de demain »</p>
+          <cite>— KN-Group Consulting</cite>
+        </div>
+      </div>
+
+      <div class="split-media reveal">
+        <!-- IMAGE À REMPLACER : ex. images/bureau/vision.jpg -->
+        <img loading="lazy" src="images/apropos/vision.jpg" alt="Architecture africaine moderne en harmonie avec le paysage">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qui-sommes-nous" class="section-alt">
+  <div class="container">
+    <div class="split">
+      <div class="split-media reveal">
+        <img loading="lazy" src="images/apropos/qui-sommes-nous.jpg" alt="Notre équipe au travail">
+      </div>
+      <div class="section-head reveal">
+        <span class="section-coord">Qui sommes-nous ?</span>
+        <!--<h2 class="section-title">D'une fondation à Douala à une ambition continentale</h2>-->
+        <p class="section-lede">
+          <span>KN-Group Consulting</span> est un cabinet multidisciplinaire spécialisé en architecture, design intérieur, 
+          ingénierie, urbanisme et aménagement du territoire, fondé en 2026 à Douala, au Cameroun.
+        </p>
+        <p class="section-lede">
+          Porté par une ambition internationale et animé par la volonté de contribuer activement à la transformation des territoires africains,
+          KN-Group Consulting fédère des compétences complémentaires autour d’une même vision du projet. 
+          Architectes, ingénieurs, urbanistes, designers et experts spécialisés conjuguent leurs savoir-faire pour 
+          concevoir des solutions cohérentes, innovantes, performantes et adaptées aux réalités de chaque territoire.
+        </p>
+        <p class="section-lede">
+          Notre expertise s’exerce à différentes échelles, de la conception architecturale et du design intérieur aux projets urbains 
+          et territoriaux de grande envergure. Nous intervenons notamment sur des bâtiments complexes,
+          grands équipements publics, tours, aéroports, musées, campus, programmes résidentiels, infrastructures de transport, 
+          espaces publics, plans directeurs urbains et projets d’aménagement territorial.
+        </p>
+        <p class="section-lede">
+          Notre approche repose sur une conviction fondamentale : 
+          <p><span class="strong">« Aucun territoire ne ressemble à un autre. »</span></p>
+        </p>
+        <p class="section-lede">
+          Chaque contexte possède son histoire, 
+          sa culture, ses ressources, ses contraintes, ses dynamiques économiques et sociales ainsi que son propre potentiel de développement.
+        </p>
+        <p class="section-lede">
+          Nous refusons ainsi les réponses standardisées. Chaque projet fait l’objet d’une lecture approfondie de son environnement 
+          afin de proposer une réponse contextuelle, pertinente, durable et porteuse de sens.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="culture">
+  <div class="container">
+    <div class="culture-head">
+      <span class="section-coord">Notre culture</span>
+      <h2 class="section-title">Une culture portée par l'intelligence collective</h2>
+      <p class="section-lede">
+        Notre culture repose sur une conviction : les projets les plus ambitieux sont ceux qui naissent de la rencontre entre plusieurs expertises, plusieurs perspectives et une compréhension approfondie du territoire.
+      </p>
+    </div>
+
+    <div class="culture-list">
+
+      <!-- 01 -->
+      <div class="culture-band" id="fondement01">
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 01</span>
+          <h3>L'interdisciplinarité comme moteur de création</h3>
+          <p>La complexité des enjeux contemporains impose de dépasser les approches isolées. Chez KN-Group Consulting, architectes, ingénieurs, urbanistes, designers et experts spécialisés collaborent dès les premières phases de réflexion et de conception. Cette approche permet de croiser les compétences, d’anticiper les contraintes, d’optimiser les solutions et de développer des projets globaux, cohérents et performants. Pour nous, l’interdisciplinarité n’est pas simplement une méthode de travail : elle constitue l’un des fondements de notre identité.</p>
+        </div>
+        <div class="culture-band__media" data-placeholder="culture-01">
+          <!-- Glisse ton image ici : <img src="images/culture-01.jpg" alt="…"> -->
+          <div class="placeholder-label">
+            <img src="images/valeurs/interdisciplinarite.jpeg">
+          </div>
+        </div>
+        <div class="culture-band__num"><span class="num">01</span></div>
+      </div>
+
+      <!-- 02 (inversé) -->
+      <div class="culture-band is-reversed" id="fondement02">
+        <div class="culture-band__media" data-placeholder="culture-02">
+          <div class="placeholder-label">
+            <img src="images/valeurs/excellent-design.jpg">
+          </div>
+        </div>
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 02</span>
+          <h3>L'excellence comme exigence</h3>
+          <p>Chaque projet représente une nouvelle occasion de repousser nos standards. Nous recherchons en permanence le juste équilibre entre esthétique, fonctionnalité, innovation, performance technique, qualité d’usage et durabilité. Notre exigence s’exprime à chaque étape du projet, de l’analyse initiale à la conception, du développement technique au suivi de la réalisation. Nous accordons une attention particulière aux détails, car nous sommes convaincus que l’excellence globale d’un projet repose aussi sur la qualité de chacune de ses composantes.</p>
+        </div>
+        <div class="culture-band__num"><span class="num">02</span></div>
+      </div>
+
+      <!-- 03 -->
+      <div class="culture-band" id="fondement03">
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 03</span>
+          <h3>L'innovation au service du territoire</h3>
+          <p>Pour KN-Group Consulting, l’innovation n’est pas une finalité. Elle doit répondre à un besoin, résoudre une problématique ou créer une nouvelle valeur. Nous explorons continuellement les technologies émergentes, nouveaux procédés constructifs, matériaux innovants, outils numériques et méthodes de conception avancées afin de développer des solutions adaptées aux enjeux contemporains. Notre objectif n’est pas de reproduire les modèles existants, mais de concevoir des réponses nouvelles, contextualisées et responsables, capables de répondre aux réalités et aux ambitions des territoires africains.</p>
+        </div>
+        <div class="culture-band__media" data-placeholder="culture-03">
+          <div class="placeholder-label">
+           <img src="images/valeurs/innovation.jpg">
+          </div>
+        </div>
+        <div class="culture-band__num"><span class="num">03</span></div>
+      </div>
+
+      <!-- 04 (inversé) -->
+      <div class="culture-band is-reversed" id="fondement04">
+        <div class="culture-band__media" data-placeholder="culture-04">
+          <div class="placeholder-label">
+            <img src="images/valeurs/equite-inclusion.jpg">
+          </div>
+        </div>
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 04</span>
+          <h3>L'humain, l'équité et l'inclusion</h3>
+          <p>Nous croyons que l’architecture et l’aménagement du territoire doivent avant tout être au service de l’humain. Nos projets prennent en compte les dimensions sociales, culturelles et économiques propres à chaque territoire afin de favoriser des espaces accessibles, inclusifs, sûrs et adaptés à la diversité des usages et des populations. Nous considérons la qualité d’un projet non seulement à travers sa performance architecturale ou technique, mais également à travers son impact sur les personnes, les communautés et le territoire qui l’accueille.</p>
+        </div>
+        <div class="culture-band__num"><span class="num">04</span></div>
+      </div>
+
+      <!-- 05 -->
+      <div class="culture-band" id="fondement05">
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 05</span>
+          <h3>L'engagement climatique et environnemental</h3>
+          <p>Les défis environnementaux et climatiques imposent une évolution profonde de nos manières de concevoir, de construire et d’aménager les territoires. Nous intégrons progressivement dans nos projets les principes de sobriété énergétique, efficacité environnementale, conception bioclimatique, résilience climatique, économie circulaire, optimisation des ressources et réduction de l’empreinte carbone. Notre ambition est de contribuer à l’émergence de bâtiments et de territoires capables de créer davantage de valeur avec moins de ressources, tout en renforçant leur capacité d’adaptation aux changements climatiques. Nous souhaitons ainsi inscrire notre démarche dans une trajectoire de long terme vers des territoires plus sobres, plus résilients et plus responsables.</p>
+        </div>
+        <div class="culture-band__media" data-placeholder="culture-05">
+          <div class="placeholder-label">
+            <img src="images/valeurs/engagement-climatique.jpg">
+          </div>
+        </div>
+        <div class="culture-band__num"><span class="num">05</span></div>
+      </div>
+
+      <!-- 06 (inversé) -->
+      <div class="culture-band is-reversed" id="fondement06">
+        <div class="culture-band__media" data-placeholder="culture-06">
+          <div class="placeholder-label">
+           <img src="images/valeurs/demarche-responsable.png">
+          </div>
+        </div>
+        <div class="culture-band__body">
+          <span class="culture-band__eyebrow">Fondement 06</span>
+          <h3>Une démarche responsable et conforme</h3>
+          <p>Notre engagement s’étend également à la conformité réglementaire, administrative et juridique de nos interventions. Dans chaque pays et sur chaque territoire où nous intervenons, nous veillons à inscrire nos projets dans le respect des lois, normes, procédures administratives, réglementations techniques, règles d’urbanisme et exigences applicables localement. Cette démarche nous permet de sécuriser les projets, de garantir leur conformité et de construire des relations fondées sur la transparence, la rigueur et la responsabilité professionnelle. Nous considérons le respect des cadres réglementaires non comme une simple contrainte, mais comme une composante essentielle de la qualité et de la pérennité de chaque projet.</p>
+        </div>
+        <div class="culture-band__num"><span class="num">06</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="rejoindre">
+  <div class="container">
+    <div class="split reveal">
+      <div>
+        <div class="section-head">
+          <span class="section-coord">Nous rejoindre</span>
+          <!--<h2 class="section-title">Des talents passionnés par l'architecture et l'innovation</h2>-->
+          <p class="section-lede">
+            Nous recrutons dans les domaines de l'architecture, de l'ingénierie, de l'urbanisme, du
+            design intérieur, de la modélisation numérique et du développement durable. Nous
+            accueillons également des stagiaires issus d'écoles d'architecture, d'ingénieurs et de
+            formations en urbanisme.
+          </p>
+        </div>
+        <div class="quote-block reveal">
+          <p>« Des talents passionnés par l'architecture et l'innovation »</p>
+        </div>
+        <a class="btn" href="contact.html">Nous contacter</a>
+      </div>
+      <div class="split-media reveal">
+        <!-- IMAGE À REMPLACER : ex. images/bureau/rejoindre.jpg -->
+        <img loading="lazy" src="images/apropos/rejoindre.jpg" alt="Espace de travail africain et architecture de bureau">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <div class="footer-brand-logo">
+          <!-- LOGO À REMPLACER : images/KLOGO7.png -->
+          <img src="images/KLOGO7.png" alt="Logo KN Group Consulting">
+        </div>
+        <div class="footer-brand-text">
+          <div class="footer-brand">KN-<span>GROUP</span> CONSULTING</div>
+          <p class="footer-tagline">Architecture, ingénierie, urbanisme et aménagement du territoire — Douala, Cameroun.</p>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="index.html">Accueil</a>
+          <a href="Apropos.html">À propos</a>
+          <a href="expertise.html">Expertise</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>À propos</h5>
+          <p>Douala, Cameroun</p>
+          <a href="mailto:contact@kn-group.pro">contact@kn-group.pro</a>
+        </div>
+        <div class="footer-col">
+          <h5>Suivez-nous</h5>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.6 4.69 5.98V24h-4V14.4c0-2.28-.05-5.2-3.17-5.2-3.2 0-3.69 2.5-3.69 5.07V24h-4V8.5z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M17.5 6.5h.01"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.7c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34V22C18.34 21.12 22 16.99 22 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23 2.999a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0 1.98-2.48 9.14 9.14 0 0 1-2.88 1.1 4.52 4.52 0 0 0-7.7 4.12A12.84 12.84 0 0 1 1.64 3.16a4.5 4.5 0 0 0 1.4 6.03 4.48 4.48 0 0 1-2.05-.56v.06a4.52 4.52 0 0 0 3.63 4.43 4.52 4.52 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.42-.01-.63A9.22 9.22 0 0 0 23 2.999z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KN-Group Consulting. Tous droits réservés.</span>
+      <span><a href="mailto:josefernandleuwat@gmail.com"></a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Retour en haut">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/counter.js"></script>
+</body>
+</html>
